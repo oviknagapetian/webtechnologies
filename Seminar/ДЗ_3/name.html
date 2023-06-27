@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Приветствие</title>
+  <script>
+    function showName() {
+      var name = prompt("Пожалуйста, введите ваше имя:");
+      if (name != null) {
+        document.getElementById("output").textContent = "Привет, " + name + "!";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Приветствие</h1>
+  <button onclick="showName()">Нажмите, чтобы ввести имя</button>
+  <p id="output"></p>
+</body>
+</html>
